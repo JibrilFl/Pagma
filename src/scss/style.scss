@@ -1,0 +1,60 @@
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #131313;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: green;
+    }
+}
+
+h1 {
+    padding-top: 300px;
+    font-family: 'PotraLight';
+    font-size: 150px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+span {
+    font-family: 'Montserrat';
+    font-size: 150px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+header {
+    height: 200px;
+}
+
+main {
+    position: relative;
+    height: calc(100vh - 200px);
+    background: radial-gradient(40% 50% at 64% 50%, rgba(255, 255, 255, 0.25) 0%, rgba(25, 28, 36, 0) 77%);
+
+    svg {
+        position: absolute;
+        top: 0;
+        right: 15%;
+        filter: url(#filterA);
+
+        path {
+            stroke: url(#paint0_linear_350_20);
+        }
+    }
+}
