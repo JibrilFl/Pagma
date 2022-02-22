@@ -90,6 +90,8 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+gulp/*.json
+package-lock.json
 
 # Gatsby files
 .cache/
