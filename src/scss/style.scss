@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 body {
     background: #131313;
     color: #fff;
@@ -40,6 +45,20 @@ span {
 
 header {
     height: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+        margin-left: auto;
+
+        li {
+            margin-left: 150px;
+        }
+    }
 }
 
 main {
