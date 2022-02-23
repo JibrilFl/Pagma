@@ -1,0 +1,56 @@
+.home {
+    padding: 0 0 83px;
+    margin-top: 150px;
+    min-height: 899px;
+
+    &__text {
+        padding-top: 218px;
+        position: relative;
+        @include Montserrat400;
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 661px;
+        padding-left: 21px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 230px;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--white);
+            box-shadow: 0px 0px 2px var(--white);
+        }
+    }
+
+    &__title {
+        margin-top: 23px;
+        @include Potra;
+        font-size: 150px;
+        line-height: 163px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        span {
+            @include Grotesque;
+            font-size: 150px;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -20px;
+        right: 106px;
+        width: 1407px;
+        height: 816px;
+        filter: var(--svg-filter);
+
+        path {
+            stroke: var(--svg-stroke);
+        }
+    }
+
+}

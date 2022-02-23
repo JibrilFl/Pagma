@@ -17,3 +17,16 @@ export function isWebp() {
         document.documentElement.classList.add(className);
     });
 }
+
+export function colorTheme() {
+    const input = document.querySelector('#colorTheme'),
+        body = document.querySelector('body');
+
+    input.addEventListener('click', function () {
+        if (this.checked) {
+            body.classList.add('white');
+        } else {
+            body.classList.remove('white');
+        }
+    });
+}

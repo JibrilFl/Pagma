@@ -1,0 +1,101 @@
+:root {
+    --black: #131313;
+    --white: #ffffff;
+    --svg-filter: url(#filterA);
+    --svg-stroke: url(#paint0_linear_350_20);
+    --input: #1b1b1b;
+    --input-2: #2b2b2d;
+}
+
+.white {
+    --black: #ffffff;
+    --white: #131313;
+    --svg-filter: url(#filterB);
+    --svg-stroke: #fb1b3d;
+    --input: #ffffff;
+    --input-2: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    padding-left: 95px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &_home {
+        padding-left: 150px;
+        height: 800px;
+        background: radial-gradient(37% 44% at 63% 64%, rgba(255, 255, 255, 0.25) 0%, rgba(25, 28, 36, 0) 77%);
+    }
+
+    &_header {
+        padding-left: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    &_line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 45px;
+        border-left: 1px solid var(--white);
+        border-top: 1px solid var(--white);
+    }
+}
+
+.title {
+    @include Montserrat600;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 83px;
+    letter-spacing: 0.13em;
+    max-width: 945px;
+}
+
+.left-title {
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    text-transform: uppercase;
+    @include Grotesque;
+    font-size: 50px;
+    letter-spacing: 0.13em;
+}
+
+.project {
+    display: block;
+    width: 188px;
+    height: 185px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        @include Montserrat700;
+        font-size: 20px;
+        letter-spacing: 0.13em;
+        line-height: 22px;
+        width: 114px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        margin-top: 10px;
+    }
+}
