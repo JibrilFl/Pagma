@@ -40,7 +40,7 @@ body {
         align-items: center;
     }
 
-    &_line {
+    &__line {
         left: 0;
         right: 0;
         top: 0;
@@ -48,9 +48,10 @@ body {
         padding-left: 330px;
         padding-top: 40px;
         padding-bottom: 45px;
+    }
 
-        // border-left: 1px solid var(--white);
-        // border-top: 1px solid var(--white);
+    &__line_left {
+
         &::before {
             content: '';
             left: 97px;
@@ -60,6 +61,9 @@ body {
             width: 1px;
             background-color: var(--white);
         }
+    }
+
+    &__line_top {
 
         &::after {
             content: '';
@@ -128,7 +132,7 @@ body {
     transform: rotate(-90deg);
     @include Montserrat400;
     font-size: 20px;
-    color: #ffffff;
+    color: var(--white);
 
     &::before {
         content: '';
@@ -138,5 +142,31 @@ body {
         width: 70px;
         height: 1px;
         background-color: var(--white);
+    }
+}
+
+.right_line {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 120%;
+        width: 1px;
+        background-color: var(--white);
+        right: -100px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: $red;
+        right: -113px;
+        top: 20px;
     }
 }

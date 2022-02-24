@@ -30,3 +30,16 @@ export function colorTheme() {
         }
     });
 }
+
+export function slider() {
+    $('.customers__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+};

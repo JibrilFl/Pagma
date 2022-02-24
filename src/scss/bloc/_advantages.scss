@@ -1,0 +1,45 @@
+.advantages {
+    min-height: 800px;
+
+    &__items {
+        margin-top: 55px;
+        margin-right: 166px;
+        max-width: 826px;
+    }
+
+    &__item {
+        padding-bottom: 60px;
+        padding-left: 53px;
+        @include Montserrat400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.105em;
+        position: relative;
+    }
+
+    &__item::before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 20%;
+        left: 0;
+        background-color: var(--white);
+    }
+
+    &__item::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 10px;
+        top: 25%;
+        background-color: var(--white);
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+}
