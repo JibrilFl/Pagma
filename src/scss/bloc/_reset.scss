@@ -3,7 +3,9 @@
    License: none (public domain)
 */
 
-* {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
