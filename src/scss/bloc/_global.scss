@@ -85,6 +85,13 @@ body {
     line-height: 83px;
     letter-spacing: 0.13em;
     max-width: 945px;
+
+    &_contacts {
+        @include Grotesque;
+        font-size: 30px;
+        line-height: 108.5%;
+        letter-spacing: 0.105em;
+    }
 }
 
 .left-title {
@@ -109,6 +116,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &_small {
+        width: 100px;
+        height: 100px;
+        background-color: var(--white);
+
+        .project__text {
+            font-size: 13px;
+            margin-left: 50px;
+            line-height: 14px;
+            color: var(--black);
+        }
+
+        .project__img {
+            path {
+                fill: var(--black);
+            }
+
+            margin-top: 5px;
+        }
+    }
 
     &__text {
         @include Montserrat700;
@@ -145,7 +173,7 @@ body {
     }
 }
 
-.right_line {
+.right-line {
     position: relative;
 
     &::before {

@@ -1,0 +1,63 @@
+.prices {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    &__card {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 44px;
+        }
+    }
+
+    &__name {
+        width: 408px;
+        height: 204px;
+        background-color: $red;
+        padding: 27px 66px 29px 45px;
+        margin-right: 35px;
+        display: flex;
+        align-items: end;
+
+        &_title {
+            @include Montserrat700;
+            font-size: 30px;
+            line-height: 108.5%;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            width: 180px;
+            margin-right: 20px;
+            align-self: start;
+        }
+    }
+
+    &__about {
+
+        &_title {
+            @include Montserrat700;
+            font-size: 30px;
+            line-height: 108.5%;
+            letter-spacing: 0.13em;
+            margin-bottom: 10px;
+        }
+
+        &_descr {
+            @include Montserrat400;
+            font-size: 16px;
+            line-height: 169%;
+            letter-spacing: 0.105em;
+            max-width: 650px;
+            margin-bottom: 40px;
+        }
+
+        &_price-tag {
+            @include Montserrat700;
+            font-size: 40px;
+            line-height: 108.5%;
+            letter-spacing: 0.13em;
+        }
+    }
+}
