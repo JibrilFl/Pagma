@@ -95,6 +95,10 @@
         transition: .3s;
     }
 
+    &_link:hover {
+        color: $red;
+    }
+
     &_link:hover::before {
         width: 100%;
     }

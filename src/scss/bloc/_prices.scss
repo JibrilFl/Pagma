@@ -21,6 +21,7 @@
         margin-right: 35px;
         display: flex;
         align-items: end;
+        cursor: pointer;
 
         &_title {
             @include Montserrat700;
