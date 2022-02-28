@@ -57,7 +57,13 @@ export function anchor() {
             e.preventDefault();
 
             // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-            let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - headerHeight + window.pageYOffset;
+            let coordY;
+            // для разных разрешений экрана
+            if (window.innerWidth <= 850) {
+                coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+            } else {
+                coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - headerHeight + window.pageYOffset;
+            }
 
             // запускаем интервал, в котором
             let scroller = setInterval(function () {
@@ -77,5 +83,20 @@ export function anchor() {
                 // время интервала равняется частному от времени анимации и к-ва кадров
             }, animationTime / framesCount);
         });
+    });
+}
+
+export function burgerMenu() {
+    let burger = document.querySelector('.header__burger'),
+        menu = document.querySelector('.header__wrapper');
+
+    burger.addEventListener('click', function () {
+        if (burger.classList.contains('active') && menu.classList.contains('active')) {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+        } else {
+            burger.classList.add('active');
+            menu.classList.add('active');
+        }
     });
 }

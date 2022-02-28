@@ -4,4 +4,5 @@ flsFunctions.isWebp();
 flsFunctions.colorTheme();
 flsFunctions.slider();
 flsFunctions.anchor();
+flsFunctions.burgerMenu();
 new WOW().init();

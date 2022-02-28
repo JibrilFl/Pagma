@@ -172,7 +172,7 @@ body {
 
 .scroll-link_down {
     position: absolute;
-    right: 202px;
+    right: 100px;
     bottom: 187px;
     transform: rotate(-90deg);
     @include Montserrat400;
@@ -234,7 +234,7 @@ body {
 .ani {
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
-    animation: draw 6s linear forwards;
+    animation: draw 2s linear forwards;
     animation-delay: 1.5s;
 }
 

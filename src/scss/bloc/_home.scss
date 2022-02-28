@@ -29,13 +29,11 @@
         margin-top: 23px;
         @include Potra;
         font-size: 150px;
-        line-height: 163px;
         letter-spacing: 0.15em;
         text-transform: uppercase;
 
         span {
             @include Grotesque;
-            font-size: 150px;
             letter-spacing: 0.1em;
         }
     }

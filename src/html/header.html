@@ -1,5 +1,10 @@
 <header class="header">
     <div class="container container_header">
+        <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <a class="header__logo" href="#home">
             <svg width="320" height="125" viewBox="0 0 320 125" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -16,17 +21,19 @@
                     stroke="#FB1B3D" stroke-width="3" />
             </svg>
         </a>
-        <label class="header__color">
-            <input id="colorTheme" type="checkbox">
-            <span class="check"></span>
-        </label>
-        <ul class="header__nav">
-            <li class="header__nav_item"><a href="#home" class="header__nav_link">Home</a></li>
-            <li class="header__nav_item"><a href="#about" class="header__nav_link">About</a></li>
-            <li class="header__nav_item"><a href="#advantages" class="header__nav_link">Advantages</a></li>
-            <li class="header__nav_item"><a href="#customers" class="header__nav_link">Customers</a></li>
-            <li class="header__nav_item"><a href="#prices" class="header__nav_link">Prices</a></li>
-            <li class="header__nav_item"><a href="#contacts" class="header__nav_link">Contacts</a></li>
-        </ul>
+        <div class="header__wrapper">
+            <label class="header__color">
+                <input id="colorTheme" type="checkbox">
+                <span class="check"></span>
+            </label>
+            <ul class="header__nav">
+                <li class="header__nav_item"><a href="#home" class="header__nav_link">Home</a></li>
+                <li class="header__nav_item"><a href="#about" class="header__nav_link">About</a></li>
+                <li class="header__nav_item"><a href="#advantages" class="header__nav_link">Advantages</a></li>
+                <li class="header__nav_item"><a href="#customers" class="header__nav_link">Customers</a></li>
+                <li class="header__nav_item"><a href="#prices" class="header__nav_link">Prices</a></li>
+                <li class="header__nav_item"><a href="#contacts" class="header__nav_link">Contacts</a></li>
+            </ul>
+        </div>
     </div>
 </header>
