@@ -198,10 +198,6 @@
         min-height: 250px;
     }
 
-    .home__img {
-        left: 50px;
-    }
-
     .home__text {
         padding-top: 50px;
     }
@@ -213,7 +209,6 @@
 
 @media (max-width: 390px) {
     .home__img {
-        left: -15px;
         width: 115%;
     }
 }
