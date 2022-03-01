@@ -88,15 +88,25 @@ export function anchor() {
 
 export function burgerMenu() {
     let burger = document.querySelector('.header__burger'),
-        menu = document.querySelector('.header__wrapper');
+        menu = document.querySelector('.header__wrapper'),
+        link = document.querySelectorAll('.header__nav_link');
 
-    burger.addEventListener('click', function () {
-        if (burger.classList.contains('active') && menu.classList.contains('active')) {
-            burger.classList.remove('active');
-            menu.classList.remove('active');
-        } else {
-            burger.classList.add('active');
-            menu.classList.add('active');
-        }
+    function modal() {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+
+    link.forEach(item => {
+        item.addEventListener('click', function () {
+            if (burger.classList.contains('active')) {
+                modal();
+            }
+        });
     });
+
+
+
+
+
+    burger.addEventListener('click', modal);
 }
