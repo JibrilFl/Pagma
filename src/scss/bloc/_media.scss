@@ -1,7 +1,18 @@
+@media (max-width: 1750px) {
+    .scroll-link_down {
+        right: 0;
+    }
+}
+
 @media (max-width: 1650px) {
     .container {
         padding: 0 20px 0 60px;
     }
+
+    .container__line_left:before {
+        left: 55px;
+    }
+
 
     .home__img {
         width: 85%;
@@ -21,6 +32,10 @@
     .container_home {
         min-height: 700px;
         background: radial-gradient(37% 44% at 50% 50%, rgba(255, 255, 255, 0.25) 0%, rgba(25, 28, 36, 0) 77%);
+    }
+
+    .left-title {
+        left: -50px;
     }
 }
 

@@ -104,9 +104,5 @@ export function burgerMenu() {
         });
     });
 
-
-
-
-
     burger.addEventListener('click', modal);
 }
