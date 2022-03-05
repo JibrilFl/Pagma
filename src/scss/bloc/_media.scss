@@ -13,14 +13,20 @@
         padding: 0;
         margin-left: 50px;
         padding-left: 50px;
+        padding-bottom: 50px;
     }
 
     .container__line_left::before {
         left: -50px;
     }
 
+    .container__line_top::after {
+        left: -50px;
+        width: calc(100% + 50px);
+    }
+
     .left-title {
-        left: -100px;
+        left: -50px;
     }
 
     .home__img {
@@ -51,6 +57,26 @@
     .about__items {
         flex-wrap: wrap;
     }
+
+    .advantages,
+    .customers {
+        min-height: 400px;
+    }
+
+    .contacts .scroll-link_down {
+        bottom: 130px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .contacts .scroll-link_down {
+        display: none;
+    }
+
+    .contacts__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -61,6 +87,39 @@
     .about__item {
         margin-bottom: 50px;
     }
+
+    .advantages__inner {
+        flex-direction: column;
+    }
+
+    .advantages__items {
+        margin-right: 0;
+    }
+
+    .customers .scroll-link_down,
+    .prices .scroll-link_down {
+        display: none;
+    }
+
+    .prices__card {
+        margin-right: 20px;
+    }
+
+    .prices__about_title {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .prices__about_descr {
+        margin-bottom: 10px;
+    }
+
+    .prices__about_price-tag {
+        font-size: 30px;
+        line-height: 1;
+    }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -104,11 +163,18 @@
     .about__item {
         flex-wrap: wrap;
     }
+
+    .customers__slider::before,
+    .customers__slider::after {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
     .container {
         padding: 0 15px;
+        padding-bottom: 40px;
+        padding-top: 30px;
     }
 
     .title {
@@ -117,7 +183,6 @@
     }
 
     .container__line {
-        padding: 0 15px 0;
         padding-left: 50px;
     }
 
@@ -171,6 +236,23 @@
     .left-title {
         font-size: 40px;
     }
+
+    .customers__slide {
+        grid-template-columns: repeat(auto-fill, 250px);
+        justify-content: center;
+    }
+
+    .customers__slide img {
+        max-width: 150px;
+    }
+
+    .prices__card {
+        flex-direction: column;
+    }
+
+    .prices__name {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -180,8 +262,10 @@
     }
 
     .left-title {
-        left: -70px;
         font-size: 25px;
+        transform: rotate(90deg);
+        left: -20px;
+        top: 20px;
     }
 
     .header {
@@ -255,9 +339,104 @@
     .home__img {
         width: 85%;
     }
+
+    .scroll-link_down {
+        display: none;
+    }
+
+    .customers__slide {
+        grid-template-columns: repeat(auto-fill, 200px);
+    }
+
+    .slick-dots {
+        margin-top: 20px;
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0) rotate(90deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) rotate(90deg);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .contacts__items {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .contacts__follow {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .contacts__item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contacts__item:first-child {
+        margin-bottom: 0;
+    }
+
+    .contacts__item:nth-child(2n+1) {
+        margin-right: 20px;
+    }
+
+    .contacts__form {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 550px) {
+
+    .container__line {
+        padding-left: 0;
+        margin-left: 40px;
+    }
+
+    .left-title {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .about__item_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about__items {
+        margin-top: 35px;
+    }
+
+    .project {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project__text {
+        font-size: 14px;
+        line-height: 14px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .project__img {
+        svg {
+            width: 90px;
+        }
+    }
 
     .home {
         min-height: 350px;
@@ -276,9 +455,73 @@
     .home__title {
         font-size: 35px;
     }
+
+    .container__line_left::before {
+        left: -40px;
+    }
+
+    .advantages__item {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+    .prices__card {
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .prices__name {
+        width: 270px;
+        height: 160px;
+        padding: 5px 5px 5px 5px;
+        margin-right: 0;
+    }
+
+    .prices__name_title {
+        font-size: 21px;
+        width: 118px;
+    }
+
+    .prices__about_descr {
+        font-size: 14px;
+    }
+
+    .project_small .project__text {
+        margin-left: 0;
+    }
+
+    .contacts__form label {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0 10px;
+    }
+
+    .contacts__form input,
+    .contacts__form textarea {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .contacts__form input::placeholder,
+    .contacts__form textarea::placeholder {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .contacts__form input[type=submit] {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 @media (max-width: 450px) {
+    .left-title {
+        font-size: 16px;
+    }
+
     .home {
         min-height: 250px;
     }
@@ -295,5 +538,25 @@
 @media (max-width: 390px) {
     .home__img {
         width: 115%;
+    }
+
+    .contacts__form label {
+        left: 20px;
+    }
+
+    .contacts__item {
+        margin-right: 0;
+    }
+
+    .contacts__item:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .contacts__follow {
+        margin-right: 0;
+    }
+
+    .contacts__follow_links {
+        justify-content: space-around;
     }
 }

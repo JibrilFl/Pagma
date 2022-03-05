@@ -47,7 +47,7 @@ body {
         bottom: 0;
         padding-left: 330px;
         padding-top: 40px;
-        padding-bottom: 45px;
+        padding-bottom: 50px;
     }
 
     &__line_left {
@@ -95,9 +95,9 @@ body {
 }
 
 .left-title {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    left: -187px;
+    left: 187px;
     max-width: 735px;
     transform: rotate(-90deg);
     transform-origin: top left;
@@ -105,6 +105,7 @@ body {
     @include Grotesque;
     font-size: 50px;
     letter-spacing: 0.13em;
+    color: var(--white);
 }
 
 .project {
